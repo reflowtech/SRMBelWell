@@ -83,8 +83,8 @@ const Dashboard = () => {
                             <thead>
                                 <tr className="bg-blue-800">
                                     <th className="px-1 sm:px-4 py-2 sm:py-3 text-white  sm:text-xl font-semibold">Status</th>
-                                    <th className="px-1 sm:px-4 py-2 sm:py-3 text-white  sm:text-xl font-semibold">Range</th>
-                                    <th className="px-1 sm:px-4 py-2 sm:py-3 text-white  sm:text-xl font-semibold">Height</th>
+                                    <th className="px-1 sm:px-4 py-2 sm:py-3 text-white  sm:text-xl font-semibold">Reading</th>
+                                    <th className="px-1 sm:px-4 py-2 sm:py-3 text-white  sm:text-xl font-semibold">Height (Meter)</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -96,7 +96,7 @@ const Dashboard = () => {
                                         {data.Status || "Loading..."}
                                     </td>
                                     <td className="px-1 sm:px-4 py-2 sm:py-3 text-center sm: text-md">{data.Reading || 'Loading...'}</td>
-                                    <td className="px-1 sm:px-4 py-2 sm:py-3 text-center sm: text-md">{data.Total || 'Loading...'}</td>
+                                    <td className="px-1 sm:px-4 py-2 sm:py-3 text-center sm: text-md">{`${ data.Total || "Loading..."}`}</td>
                                 </tr>
 
                             </tbody>
